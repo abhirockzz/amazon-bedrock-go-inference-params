@@ -1,3 +1,3 @@
-module amazon-bedrock-go-inference-params
+module github.com/abhirockzz/amazon-bedrock-go-inference-params
 
 go 1.19
