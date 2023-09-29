@@ -2,11 +2,11 @@ package claude
 
 type Request struct {
 	Prompt            string   `json:"prompt"`
-	Temperature       float64  `json:"temperature"`
-	TopP              float64  `json:"top_p"`
-	TopK              int      `json:"top_k"`
-	MaxTokensToSample int      `json:"max_tokens_to_sample"`
-	StopSequences     []string `json:"stop_sequences"`
+	MaxTokensToSample int      `json:"max_tokens_to_sample,omitempty"`
+	Temperature       float64  `json:"temperature,omitempty"`
+	TopP              float64  `json:"top_p,omitempty"`
+	TopK              int      `json:"top_k,omitempty"`
+	StopSequences     []string `json:"stop_sequences,omitempty"`
 }
 
 type Response struct {
