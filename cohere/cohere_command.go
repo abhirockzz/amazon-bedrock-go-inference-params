@@ -19,3 +19,14 @@ const (
 	All        ReturnLikelihood = "ALL"
 	None       ReturnLikelihood = "NONE"
 )
+
+type ResponseGeneration struct {
+	ID   string `json:"id"`
+	Text string `json:"text"`
+}
+
+type Response struct {
+	Generations []ResponseGeneration `json:"generations"`
+	ID          string               `json:"id"`
+	Prompt      string               `json:"prompt"`
+}
