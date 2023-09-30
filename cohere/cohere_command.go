@@ -5,7 +5,7 @@ type Request struct {
 	Temperature       float64          `json:"temperature"`
 	P                 float64          `json:"p"`
 	K                 float64          `json:"k"`
-	MaxTokens         int              `json:"max_tokens"`
+	MaxTokens         int              `json:"max_tokens,omitempty"`
 	StopSequences     []string         `json:"stop_sequences,omitempty"`
 	ReturnLikelihoods ReturnLikelihood `json:"return_likelihoods,omitempty"`
 	Stream            bool             `json:"stream,omitempty"`
