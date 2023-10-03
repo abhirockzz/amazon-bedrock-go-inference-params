@@ -5,6 +5,6 @@ type Request struct {
 }
 
 type Response struct {
-	Embedding           []float64 `json:"embedding"`
+	Embedding           []float32 `json:"embedding"`
 	InputTextTokenCount int       `json:"inputTextTokenCount"`
 }
